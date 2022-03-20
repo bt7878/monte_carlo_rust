@@ -1,6 +1,6 @@
 use rand::{thread_rng, Rng};
 
-fn monte_carlo(f: fn(&Vec<f64>) -> f64, a: &[f64], b: &[f64], n: i32) -> Option<f64> {
+fn monte_carlo(f: fn(&Vec<f64>) -> f64, a: &[f64], b: &[f64], n: u32) -> Option<f64> {
     if a.len() != b.len() {
         return None;
     }
